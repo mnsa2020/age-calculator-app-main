@@ -54,7 +54,6 @@ main {
       height: 650px;
       padding: 55px;
       border-radius: 20px 20px 190px 20px;
-
       form {
         .form_container {
           width: 80%;
@@ -67,7 +66,6 @@ main {
             align-items: flex-start;
             justify-content: space-between;
             width: 300px;
-
             label {
               color: $lightRed;
             }
@@ -116,9 +114,22 @@ main {
           }
         }
       }
-      @media (max-width: 375px) {
+    }
+    .attribution {
+      //   margin-top: 30px;
+      font-size: 11px;
+      text-align: center;
+      a {
+        color: hsl(228, 45%, 44%);
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    .container {
+      .box {
         width: 375px;
-        height: 500px;
+        height: 600px;
         padding: 40px;
         border-radius: 20px 20px 100px 20px;
         form {
@@ -161,14 +172,6 @@ main {
             }
           }
         }
-      }
-    }
-    .attribution {
-      //   margin-top: 30px;
-      font-size: 11px;
-      text-align: center;
-      a {
-        color: hsl(228, 45%, 44%);
       }
     }
   }

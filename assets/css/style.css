@@ -97,10 +97,20 @@ main .container .box .output h1 {
 main .container .box .output h1 span:first-child {
   color: #854dff;
 }
-@media (max-width: 375px) {
+main .container .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+main .container .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 767px) {
+  main {
+    width: 100%;
+  }
   main .container .box {
     width: 375px;
-    height: 500px;
+    height: 600px;
     padding: 40px;
     border-radius: 20px 20px 100px 20px;
   }
@@ -135,11 +145,4 @@ main .container .box .output h1 span:first-child {
     font-style: italic;
     line-height: 1.5;
   }
-}
-main .container .attribution {
-  font-size: 11px;
-  text-align: center;
-}
-main .container .attribution a {
-  color: hsl(228, 45%, 44%);
 }/*# sourceMappingURL=style.css.map */
