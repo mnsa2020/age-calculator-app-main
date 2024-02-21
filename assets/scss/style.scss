@@ -1,0 +1,176 @@
+// Variables
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+$fontFamily: "Poppins", sans-serif;
+
+$purple: #854dff;
+$lightRed: hsl(0, 100%, 67%);
+
+$White: hsl(0, 0%, 100%);
+$offWhite: hsl(0, 0%, 94%);
+$lightGrey: hsl(0, 0%, 86%);
+$smokeyGrey: hsl(0, 1%, 44%);
+$offBlack: hsl(0, 0%, 8%);
+// Variables
+
+// Globals
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $fontFamily;
+}
+img,
+picture {
+  max-width: 100%;
+}
+input {
+  font-size: 32px;
+  font-weight: 700;
+}
+// Globals
+
+// Main
+main {
+  position: relative;
+  background: $lightGrey;
+  height: 100vh;
+  width: 100%;
+  .container {
+    // width: 100%;
+    margin-inline: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .box {
+      background: $White;
+      width: 840px;
+      height: 650px;
+      padding: 55px;
+      border-radius: 20px 20px 190px 20px;
+
+      form {
+        .form_container {
+          width: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .block {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 300px;
+
+            label {
+              color: $lightRed;
+            }
+            input {
+              width: 160px;
+              border-radius: 5px;
+              padding: 15px 20px;
+              &::placeholder {
+                color: $smokeyGrey;
+              }
+            }
+            span {
+              color: $lightRed;
+              font-size: 14px;
+            }
+          }
+        }
+        .submit_block {
+          display: flex;
+          align-items: center;
+          margin-top: 50px;
+          hr {
+            width: 100%;
+            color: $offWhite;
+          }
+          button {
+            border-radius: 50%;
+            background: $purple;
+            padding: 1em;
+            cursor: pointer;
+            outline: none;
+            border: none;
+          }
+        }
+      }
+      .output {
+        h1 {
+          font-size: 100px;
+          font-weight: 800;
+          font-style: italic;
+          line-height: 1.2;
+          span {
+            &:first-child {
+              color: $purple;
+            }
+          }
+        }
+      }
+      @media (max-width: 375px) {
+        width: 375px;
+        height: 500px;
+        padding: 40px;
+        border-radius: 20px 20px 100px 20px;
+        form {
+          .form_container {
+            width: 100%;
+            gap: 20px;
+            &::placeholder {
+              padding: 5px;
+            }
+            .block {
+              input {
+                width: 80px;
+                font-size: 16px;
+                margin-bottom: 10px;
+              }
+              span {
+                color: $lightRed;
+              }
+            }
+          }
+          .submit_block {
+            position: relative;
+            margin-block: 60px;
+
+            button {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+        .output {
+          h1 {
+            font-size: 50px;
+            font-weight: 800;
+            font-style: italic;
+            line-height: 1.5;
+            span {
+            }
+          }
+        }
+      }
+    }
+    .attribution {
+      //   margin-top: 30px;
+      font-size: 11px;
+      text-align: center;
+      a {
+        color: hsl(228, 45%, 44%);
+      }
+    }
+  }
+}
+//  Main

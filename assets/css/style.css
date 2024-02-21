@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+img,
+picture {
+  max-width: 100%;
+}
+
+input {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+main {
+  position: relative;
+  background: hsl(0, 0%, 86%);
+  height: 100vh;
+  width: 100%;
+}
+main .container {
+  margin-inline: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .container .box {
+  background: hsl(0, 0%, 100%);
+  width: 840px;
+  height: 650px;
+  padding: 55px;
+  border-radius: 20px 20px 190px 20px;
+}
+main .container .box form .form_container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .container .box form .form_container .block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 300px;
+}
+main .container .box form .form_container .block label {
+  color: hsl(0, 100%, 67%);
+}
+main .container .box form .form_container .block input {
+  width: 160px;
+  border-radius: 5px;
+  padding: 15px 20px;
+}
+main .container .box form .form_container .block input::placeholder {
+  color: hsl(0, 1%, 44%);
+}
+main .container .box form .form_container .block span {
+  color: hsl(0, 100%, 67%);
+  font-size: 14px;
+}
+main .container .box form .submit_block {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+main .container .box form .submit_block hr {
+  width: 100%;
+  color: hsl(0, 0%, 94%);
+}
+main .container .box form .submit_block button {
+  border-radius: 50%;
+  background: #854dff;
+  padding: 1em;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+main .container .box .output h1 {
+  font-size: 100px;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.2;
+}
+main .container .box .output h1 span:first-child {
+  color: #854dff;
+}
+@media (max-width: 375px) {
+  main .container .box {
+    width: 375px;
+    height: 500px;
+    padding: 40px;
+    border-radius: 20px 20px 100px 20px;
+  }
+  main .container .box form .form_container {
+    width: 100%;
+    gap: 20px;
+  }
+  main .container .box form .form_container::placeholder {
+    padding: 5px;
+  }
+  main .container .box form .form_container .block input {
+    width: 80px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  main .container .box form .form_container .block span {
+    color: hsl(0, 100%, 67%);
+  }
+  main .container .box form .submit_block {
+    position: relative;
+    margin-block: 60px;
+  }
+  main .container .box form .submit_block button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  main .container .box .output h1 {
+    font-size: 50px;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1.5;
+  }
+}
+main .container .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+main .container .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
